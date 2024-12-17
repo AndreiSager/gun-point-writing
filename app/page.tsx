@@ -1,3 +1,4 @@
+import { Label } from "@/components/ui/label";
 import { Progress } from "@/components/ui/progress";
 import {
   Select,
@@ -15,6 +16,7 @@ export default function Home() {
     <div className="flex-col flex justify-center items-center h-full max-w-[600px] w-full gap-20 py-16">
       <h1 className="font-bold">Welcome to Gunpoint Writer!</h1>
       <div className="flex flex-col gap-2">
+        <Label>Gamemode:</Label>
         <Select>
           <SelectTrigger className="w-[180px]">
             <SelectValue placeholder="Choose a gamemode" />
@@ -22,7 +24,7 @@ export default function Home() {
           <SelectContent>
             <SelectGroup>
               <SelectItem value="3secondrush">3 Second Rush</SelectItem>
-              <SelectItem value="timelimit">Time Limit</SelectItem>
+              <SelectItem value="deadline">Deadline</SelectItem>
             </SelectGroup>
           </SelectContent>
         </Select>
